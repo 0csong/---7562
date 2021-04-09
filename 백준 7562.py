@@ -25,3 +25,8 @@ for i in range(s):
     c,d=map(int,input().split()) #최종위치
     ans=bfs(a,b,c,d,n)
     print(ans)
+    
+    
+   
+   백준 나이트의 이동 
+    https://www.acmicpc.net/problem/7562
