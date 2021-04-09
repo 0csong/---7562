@@ -1,5 +1,5 @@
-from collections import deque
-dx = [-1, -2, -2, -1, 1, 2, 2, 1]
+from collections import deque 
+dx = [-1, -2, -2, -1, 1, 2, 2, 1] //나이트의 이동좌표들
 dy = [2, 1, -1, -2, -2, -1, 1, 2]
 def bfs(x,y,z,a,n):
     q=deque()
@@ -9,10 +9,10 @@ def bfs(x,y,z,a,n):
         x,y=q.popleft()
         if x==z and y==a:
             return graph[x][y]-1 #최종적으로는 이곳에 올테니 그때 값을 하나 빼줌
-        for i in range(8):
+        for i in range(8)://나이트가 갈수있는 8가지경로
             nx=x+dx[i]
             ny=y+dy[i]
-            if 0<=nx<n and 0<=ny<n and graph[nx][ny]==0:
+            if 0<=nx<n and 0<=ny<n and graph[nx][ny]==0://방문안했으면 넣는다
                     q.append([nx,ny])
                     graph[nx][ny]=graph[x][y]+1
                     
