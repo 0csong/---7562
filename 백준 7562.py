@@ -29,4 +29,4 @@ for i in range(s):
     
    
    백준 나이트의 이동 
-    https://www.acmicpc.net/problem/7562
+    문제 출처 https://www.acmicpc.net/problem/7562
